@@ -1,4 +1,5 @@
 import cv2
+import pandas as pd
 
 def draw_border(
         img, 
@@ -16,3 +17,8 @@ def draw_border(
     )
 
     return img
+
+if __name__ == '__main__':
+    pd.set_option('display.max_columns', None)
+    df = pd.read_excel('./outputs/results_short.xlsx')
+    print(df)
